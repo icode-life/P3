@@ -1,0 +1,16 @@
+@import "./Normalize.css";
+body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  background-color: #363535;
+}
+
+h1 {
+  font-size: xx-large;
+}/*# sourceMappingURL=main.css.map */
