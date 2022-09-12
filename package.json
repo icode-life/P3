@@ -1,0 +1,19 @@
+{
+  "name": "oc_p3",
+  "version": "1.0.0",
+  "description": "Openclassrooms_P3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icode-life/P3.git"
+  },
+  "author": "Mikel Cromphoudt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/icode-life/P3/issues"
+  },
+  "homepage": "https://github.com/icode-life/P3#readme"
+}
