@@ -5,15 +5,29 @@ h3 a{
 footer{
     padding-left: 20px;
     background-color: $footer;
-        .footer-menu {
-            display: flex;
-            flex-direction: column;
-            list-style: none;
-            background-color: $footer;
-            color: $light-grey;
-            padding-left: 0px;
-        }
-            li{
-                padding-bottom: 5px;
-            }
+    height: 200px;
+    h3{
+        padding-top: 30px;
+        font-family: Shrikhand;
+    }
 }
+
+.footer__menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    list-style: none;
+    background-color: $footer;
+    color: $light-grey;
+    padding-left: 0px;
+    margin-left: 0px;
+
+    &--left{
+        display: flex;
+        justify-content: flex-start;
+        padding-bottom: 10px;
+        color: $light-grey;
+    }
+}
+
+

@@ -1,23 +1,200 @@
-/*
-Errno::ENOENT: No such file or directory @ rb_sysopen - ./sass/main.scss
+body {
+  margin: 0px;
+}
 
-Backtrace:
-/Users/mikelcromphoudt/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:454:in `read'
-/Users/mikelcromphoudt/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:454:in `update_stylesheet'
-/Users/mikelcromphoudt/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/mikelcromphoudt/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/mikelcromphoudt/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/mikelcromphoudt/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:294:in `watch'
-/Users/mikelcromphoudt/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/plugin.rb:109:in `method_missing'
-/Users/mikelcromphoudt/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:358:in `watch_or_update'
-/Users/mikelcromphoudt/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/Users/mikelcromphoudt/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
-/Users/mikelcromphoudt/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
-/Users/mikelcromphoudt/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
-/Users/mikelcromphoudt/.rbenv/versions/2.4.4/bin/sass:23:in `load'
-/Users/mikelcromphoudt/.rbenv/versions/2.4.4/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - ./sass/main.scss"; }
+body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.restocard {
+  margin: auto;
+  width: 90%;
+  height: auto;
+  background-color: white;
+  border-color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.restocard:hover {
+  box-shadow: 0 20px 60px 0px rgba(0, 0, 0, 0.5);
+  width: 83%;
+}
+
+.restocard__picture {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  overflow: hidden;
+  margin: auto;
+}
+
+.restocard__picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.restocard__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  padding: 10px;
+}
+
+.restocard__footer h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5px 5px;
+  padding-left: 5px;
+}
+
+.restocard__footer p {
+  margin: 5px 5px;
+  padding-left: 5px;
+  font-size: 17px;
+  font-weight: 200;
+}
+
+.fa-heart {
+  font-size: larger;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  margin-bottom: 0px;
+}
+header img {
+  width: 50%;
+}
+
+h3 a {
+  text-decoration: none;
+  color: #F6F6F6;
+}
+
+footer {
+  padding-left: 20px;
+  background-color: #363535;
+  height: 200px;
+}
+footer h3 {
+  padding-top: 30px;
+  font-family: Shrikhand;
+}
+
+.footer__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  list-style: none;
+  background-color: #363535;
+  color: #F6F6F6;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+.footer__menu--left {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 10px;
+  color: #F6F6F6;
+}
+
+.location {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E9EAEA;
+  border-top: solid 3px #CFCECF;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.fa-location-dot {
+  padding-right: 20px;
+}
+
+h1 {
+  font-size: larger;
+}
+
+.motto {
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  height: 280px;
+  align-items: center;
+  text-align: center;
+}
+
+.motto-subtitle {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: 230;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0px;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+
+i {
+  padding-right: 15px;
+}
+
+.fa-utensils {
+  width: 20px;
+}
+
+.restocontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #F6F6F6;
+  padding-bottom: 50px;
+}
+.restocontainer__title {
+  display: flex;
+  justify-content: left;
+  padding-top: 30px;
+  padding-left: 23px;
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

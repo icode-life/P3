@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/icode-life/P3/issues"
   },
-  "homepage": "https://github.com/icode-life/P3#readme"
+  "homepage": "https://github.com/icode-life/P3#readme",
+  "dependencies": {
+    "sass": "^1.54.9"
+  }
 }
