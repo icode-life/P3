@@ -15,6 +15,7 @@ body {
 }
 
 .btn {
+  position: relative;
   background-color: #F6F6F6;
   border-radius: 25px;
   height: 65px;
@@ -22,6 +23,21 @@ body {
   justify-content: center;
   align-items: center;
   box-shadow: 0 10px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+.numbers {
+  position: absolute;
+  top: 7px;
+  left: -15px;
+  background-color: #9356DC;
+  color: #F6F6F6;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
 }
 
 .restocard {
@@ -185,14 +201,14 @@ button {
   border: none;
   border-radius: 50px;
   background: rgb(224, 118, 246);
-  background: linear-gradient(170deg, rgb(224, 118, 246) 37%, rgb(211, 107, 219) 43%, rgb(147, 86, 220) 70%);
+  background: linear-gradient(175deg, rgb(224, 118, 246) 37%, rgb(211, 107, 219) 43%, rgb(147, 86, 220) 70%);
   color: #F6F6F6;
   box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
 h2 {
-  display: flex;
-  justify-content: center;
+  text-align: left;
+  padding-left: 30px;
 }
 
 nav {
