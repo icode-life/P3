@@ -9,6 +9,32 @@
     height: 250px;
 }
 
+.container__menu-carte{
+}
 .menu-carte{
-    
+    position: relative;
+    top: -50px;
+    height: auto;
+    background-color: $light-grey;
+    border-radius: 35px 35px 0px 0px;
+    padding-top: 20px;
+    &__headline{
+        display: flex; 
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    &__title{
+        font-family: shrikhand;
+        font-size: 25px;
+    }
+    &__heart{
+        font-size: x-large;
+        font-weight: 10px;
+    }
+}
+
+h3{
+    font-weight: 300;
+    font-size: 20px;
+    padding-left: 30px;
 }
