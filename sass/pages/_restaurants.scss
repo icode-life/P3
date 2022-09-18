@@ -1,3 +1,14 @@
+a:hover :visited{
+    text-decoration: none;
+}
+
+.fa-arrow-left{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+}
+
 .hero{
     width: 100%;
 }
@@ -10,8 +21,24 @@
 }
 
 .container__menu-carte{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
-.menu-carte{
+
+.souligné-partiel{
+    text-decoration: underline $third 4px;
+    text-underline-offset: 0.6rem;
+}
+
+.fa-heart {
+    font-size: larger;
+    &:hover {
+        background: rgb(224, 118, 246);
+        background: linear-gradient(175deg, rgba(224, 118, 246, 1) 37%, rgba(211, 107, 219, 1) 43%, rgba(147, 86, 220, 1) 70%);
+    }
+}
+.menu-restaurant{
     position: relative;
     top: -50px;
     height: auto;
@@ -29,12 +56,33 @@
     }
     &__heart{
         font-size: x-large;
-        font-weight: 10px;
+        color: gray;
     }
 }
 
 h3{
     font-weight: 300;
-    font-size: 20px;
-    padding-left: 30px;
+    font-size: 17px;
+    padding-left: 20px;
+}
+
+h4{
+ margin-bottom: 0px;
+ margin-top: 12px;
+ font-size: large;
+ font-weight: 500;
+}
+
+
+h6{
+    margin-bottom: 0px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight:300;
+}
+
+.price{
+    margin-bottom: 0px;
+    margin-top: 10px;
+    padding-bottom: 10px;
 }
