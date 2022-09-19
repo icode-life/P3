@@ -51,14 +51,6 @@
     font-weight: 200;
 }
 
-.fa-heart{
-    font-size: larger;
-    &:hover{
-        background: rgb(224, 118, 246);
-        background: linear-gradient(175deg, rgba(224, 118, 246, 1) 37%, rgba(211, 107, 219, 1) 43%, rgba(147, 86, 220, 1) 70%);
-    }
-}
-
 .flag{
     position: absolute;
     top:12px;
@@ -90,4 +82,15 @@
         display: flex;
         justify-content: space-between;
     }
+}
+
+@media (min-width: 992px) {
+    .menu-items{
+        width: 40%;
+    }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 991px) {
+    
 }

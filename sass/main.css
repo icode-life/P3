@@ -111,14 +111,6 @@ button {
   font-weight: 200;
 }
 
-.fa-heart {
-  font-size: larger;
-}
-.fa-heart:hover {
-  background: rgb(224, 118, 246);
-  background: linear-gradient(175deg, rgb(224, 118, 246) 37%, rgb(211, 107, 219) 43%, rgb(147, 86, 220) 70%);
-}
-
 .flag {
   position: absolute;
   top: 12px;
@@ -152,6 +144,11 @@ button {
   justify-content: space-between;
 }
 
+@media (min-width: 992px) {
+  .menu-items {
+    width: 40%;
+  }
+}
 header {
   display: flex;
   justify-content: center;
@@ -244,6 +241,8 @@ a:hover :visited {
   background-color: #F6F6F6;
   border-radius: 35px 35px 0px 0px;
   padding-top: 20px;
+  max-width: 600px;
+  margin: auto;
 }
 .menu-restaurant__headline {
   display: flex;
@@ -285,6 +284,47 @@ h6 {
   padding-bottom: 10px;
 }
 
+li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.call2action {
+  margin-top: 30px;
+}
+
+@media (min-width: 992px) {
+  .menu-restaurant {
+    position: static;
+    max-width: 100%;
+  }
+  .menu-restaurant__headline {
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .logo {
+    padding-top: 6px;
+    padding-bottom: 5px;
+  }
+  .container__menu-carte {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 991px) {
+  .menu-restaurant {
+    position: static;
+  }
+  .logo {
+    padding-top: 6px;
+    padding-bottom: 5px;
+    background-color: white;
+    width: 100%;
+  }
+  body {
+    background-color: #F6F6F6;
+  }
+}
 .location {
   height: 60px;
   display: flex;

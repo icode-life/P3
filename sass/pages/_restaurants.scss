@@ -45,6 +45,8 @@ a:hover :visited{
     background-color: $light-grey;
     border-radius: 35px 35px 0px 0px;
     padding-top: 20px;
+    max-width: 600px;
+    margin: auto;
     &__headline{
         display: flex; 
         justify-content: space-evenly;
@@ -85,4 +87,53 @@ h6{
     margin-bottom: 0px;
     margin-top: 10px;
     padding-bottom: 10px;
+}
+
+li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.call2action{
+    margin-top: 30px;
+}
+
+@media (min-width: 992px) {
+    .menu-restaurant {
+        position: static;
+        max-width: 100%;
+        &__headline{
+            justify-content: space-between;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    }
+
+    .logo{
+        padding-top: 6px;
+        padding-bottom: 5px;
+    }
+
+    .container__menu-carte{
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 991px){
+    .menu-restaurant{
+        position: static;
+        
+    }
+
+    .logo{
+        padding-top: 6px;
+        padding-bottom: 5px;
+        background-color: white;
+        width: 100%;
+    }
+
+    body{
+        background-color: $light-grey;
+    }
 }
