@@ -7,6 +7,12 @@ a:hover :visited{
     top: 20px;
     left: 20px;
     font-size: 20px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.back{
+    display: none;
 }
 
 .hero{
@@ -23,7 +29,7 @@ a:hover :visited{
 .container__menu-carte{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    flex-wrap: wrap;
 }
 
 .souligné-partiel{
@@ -62,6 +68,15 @@ a:hover :visited{
     }
 }
 
+.service{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+
+}
+
 h3{
     font-weight: 300;
     font-size: 17px;
@@ -96,16 +111,20 @@ li a{
 
 .call2action{
     margin-top: 30px;
+    width: 80%;
 }
 
 @media (min-width: 992px) {
     .menu-restaurant {
         position: static;
         max-width: 100%;
+        border-radius: 0px;
         &__headline{
             justify-content: space-between;
             padding-left: 50px;
             padding-right: 50px;
+            max-width: 1000px;
+            margin: auto;
         }
     }
 
@@ -115,7 +134,51 @@ li a{
     }
 
     .container__menu-carte{
+        flex-direction: row;
         flex-wrap: wrap;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .back {
+        display: initial;
+        position: absolute;
+        top: 0px;
+        left: 50px;
+        font-size: 20px;
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .call2action{
+        width: 200px;
+        margin-left: 400px;
+
+    }
+
+    .service{
+        width: 40%;
+    }
+
+    .grow{
+        flex-grow: 1;
+    }
+
+    .decal{
+        margin-left: 300px;
+        margin-right: 200px;
+    }
+
+    footer{
+        height: 170px;
+    }
+
+    .footer-title{
+        margin-bottom: 35px;
+    }
+
+    .footer-menus{
+        display: flex;
     }
 
 }
