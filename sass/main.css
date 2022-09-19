@@ -13,7 +13,6 @@ button {
   height: 50px;
   border: none;
   border-radius: 50px;
-  background: rgb(224, 118, 246);
   background: linear-gradient(175deg, rgb(224, 118, 246) 37%, rgb(211, 107, 219) 43%, rgb(147, 86, 220) 70%);
   color: #F6F6F6;
   box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.3);
@@ -37,7 +36,7 @@ button {
   box-shadow: 0 10px 15px 0px rgba(0, 0, 0, 0.3);
 }
 .btn:hover {
-  background-color: #9356DC;
+  background-color: #F4EDFF;
   box-shadow: 0 20px 30px 0px rgba(0, 0, 0, 0.3);
 }
 
@@ -59,6 +58,7 @@ button {
 .restocard {
   margin: auto;
   width: 90%;
+  max-width: 600px;
   height: auto;
   background-color: white;
   border-color: white;
@@ -147,6 +147,11 @@ button {
 @media (min-width: 992px) {
   .menu-items {
     width: 80%;
+  }
+  .restocard {
+    max-width: 400px;
+    min-width: 350px;
+    gap: 40px;
   }
   .fa-heart {
     padding-right: 15px;
@@ -398,6 +403,9 @@ li a {
 
 h1 {
   font-size: larger;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 90%;
 }
 
 .motto {
@@ -417,6 +425,12 @@ h1 {
   justify-content: center;
   text-align: center;
   font-weight: 230;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main-call2action {
+  width: 230px;
 }
 
 h2 {
@@ -428,6 +442,8 @@ nav {
   display: flex;
   flex-direction: column;
   height: 300px;
+  max-width: 500px;
+  margin: auto;
 }
 
 ul {
@@ -465,6 +481,7 @@ i {
   gap: 20px;
   background-color: #F6F6F6;
   padding-bottom: 50px;
+  max-width: 1000px;
 }
 .restocontainer__title {
   display: flex;
@@ -478,4 +495,51 @@ i {
   display: flex;
   justify-content: center;
   padding-bottom: 35px;
+}
+
+@media (min-width: 992px) {
+  h2 {
+    text-align: center;
+  }
+  nav {
+    max-width: 100%;
+    height: auto;
+  }
+  .btn__menu {
+    margin: auto;
+    margin-bottom: 30px;
+    width: 95%;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .btn {
+    width: 30%;
+  }
+  .restocontainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 78px;
+  }
+  .restocontainer__title {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 991px) {
+  h2 {
+    text-align: center;
+  }
+  .menu-restaurant {
+    position: static;
+  }
+  .logo {
+    padding-top: 6px;
+    padding-bottom: 5px;
+    background-color: white;
+    width: 100%;
+  }
+  body {
+    background-color: #F6F6F6;
+  }
 }/*# sourceMappingURL=main.css.map */

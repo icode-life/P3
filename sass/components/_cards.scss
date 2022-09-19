@@ -1,6 +1,7 @@
 .restocard {
     margin: auto;
     width: 90%;
+    max-width: 600px;
     height: auto;
     background-color: white;
     border-color: white;
@@ -87,6 +88,12 @@
 @media (min-width: 992px) {
     .menu-items{
         width: 80%;
+    }
+
+    .restocard{
+        max-width: 400px;
+        min-width: 350px;
+        gap: 40px;
     }
 
 

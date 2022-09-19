@@ -15,6 +15,9 @@
 
 h1{
     font-size:larger;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 90%;
 }
 
 .motto{
@@ -34,6 +37,12 @@ h1{
     justify-content: center;
     text-align: center;
     font-weight:230;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.main-call2action{
+    width: 230px;
 }
 
 h2{
@@ -45,6 +54,8 @@ nav{
     display: flex;
     flex-direction: column;
     height: 300px;
+    max-width: 500px;
+    margin: auto;
 }
 
 ul{
@@ -82,6 +93,7 @@ i {
     gap: 20px;
     background-color: $light-grey;
     padding-bottom: 50px;
+    max-width: 1000px;
     &__title{
         display: flex;
         justify-content: left;
@@ -95,4 +107,60 @@ i {
     display: flex;
     justify-content: center;
     padding-bottom: 35px;
+}
+
+@media (min-width: 992px) {
+    h2{
+        text-align: center;
+    }
+
+    nav{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .btn__menu{
+        margin: auto;
+        margin-bottom: 30px;
+        width: 95%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .btn{
+        width: 30%;
+    }
+    
+    .restocontainer{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 78px;
+        &__title{
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 991px) {
+    h2{
+        text-align: center;
+    }
+    
+    .menu-restaurant {
+        position: static;
+
+    }
+
+    .logo {
+        padding-top: 6px;
+        padding-bottom: 5px;
+        background-color: white;
+        width: 100%;
+    }
+
+    body {
+        background-color: $light-grey;
+    }
 }
