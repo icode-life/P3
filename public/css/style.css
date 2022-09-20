@@ -233,7 +233,7 @@ a:hover :visited {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 
 .souligné-partiel {
@@ -258,6 +258,7 @@ a:hover :visited {
   padding-top: 20px;
   max-width: 600px;
   margin: auto;
+  margin-bottom: -50px;
 }
 .menu-restaurant__headline {
   display: flex;
