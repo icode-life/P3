@@ -180,6 +180,10 @@ footer h3 {
   font-family: Shrikhand;
 }
 
+.footer-title {
+  margin-top: 0px;
+}
+
 .footer__menu {
   display: flex;
   flex-direction: column;
@@ -229,6 +233,7 @@ a:hover :visited {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .souligné-partiel {
