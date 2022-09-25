@@ -82,6 +82,9 @@
         display: flex;
         justify-content: space-between;
     }
+    &:hover{
+        transform: translateX(-80px);
+    }
 }
 
 .fa-heart {
@@ -103,6 +106,8 @@
 
     }
 }
+
+
 
 @media (min-width: 992px) {
     .menu-items{

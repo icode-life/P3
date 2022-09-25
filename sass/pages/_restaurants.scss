@@ -73,6 +73,18 @@ a:hover :visited{
     flex-direction: column;
     gap: 15px;
     margin-bottom: 20px;
+    .slide1st{
+        animation: slide-up 1000ms;    
+    }
+    .slide2nd{
+        animation: slide-up 1500ms;
+    }
+    .slide3rd{
+        animation: slide-up 2000ms;
+    }
+    .slide4th{
+        animation: slide-up 2500ms;
+    }
 
 }
 

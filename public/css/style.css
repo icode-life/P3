@@ -1,4 +1,15 @@
 @charset "UTF-8";
+@keyframes slide-up {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-left {}
 body {
   margin: 0px;
 }
@@ -139,6 +150,9 @@ button {
 .menu-items__description {
   display: flex;
   justify-content: space-between;
+}
+.menu-items:hover {
+  transform: translateX(-80px);
 }
 
 .fa-heart {
@@ -290,6 +304,18 @@ a:hover :visited {
   flex-direction: column;
   gap: 15px;
   margin-bottom: 20px;
+}
+.service .slide1st {
+  animation: slide-up 1000ms;
+}
+.service .slide2nd {
+  animation: slide-up 1500ms;
+}
+.service .slide3rd {
+  animation: slide-up 2000ms;
+}
+.service .slide4th {
+  animation: slide-up 2500ms;
 }
 
 h3 {
