@@ -38,13 +38,7 @@ a:hover :visited{
     text-underline-offset: 0.6rem;
 }
 
-.fa-heart {
-    font-size: larger;
-    &:hover {
-        background: rgb(224, 118, 246);
-        background: linear-gradient(175deg, rgba(224, 118, 246, 1) 37%, rgba(211, 107, 219, 1) 43%, rgba(147, 86, 220, 1) 70%);
-    }
-}
+
 .menu-restaurant{
     position: relative;
     top: -50px;

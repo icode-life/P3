@@ -68,7 +68,6 @@ button {
 
 .restocard:hover {
   box-shadow: 0 20px 60px 0px rgba(0, 0, 0, 0.5);
-  width: 83%;
 }
 
 .restocard__picture {
@@ -239,14 +238,6 @@ a:hover :visited {
 .souligné-partiel {
   text-decoration: underline #99E2D0 4px;
   text-underline-offset: 0.6rem;
-}
-
-.fa-heart {
-  font-size: larger;
-}
-.fa-heart:hover {
-  background: rgb(224, 118, 246);
-  background: linear-gradient(175deg, rgb(224, 118, 246) 37%, rgb(211, 107, 219) 43%, rgb(147, 86, 220) 70%);
 }
 
 .menu-restaurant {
@@ -497,6 +488,18 @@ i {
   display: flex;
   justify-content: center;
   padding-bottom: 35px;
+}
+
+.fas {
+  color: black;
+}
+
+.fa-heart {
+  font-size: larger;
+  color: pink;
+}
+.fa-heart:hover {
+  color: purple;
 }
 
 @media (min-width: 992px) {
