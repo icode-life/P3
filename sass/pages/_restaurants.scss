@@ -48,6 +48,9 @@ a:hover :visited{
     padding-top: 20px;
     max-width: 600px;
     margin: auto;
+    //ici je rajoute la margin-bottom égale au décalage du top qui décale la position de la div
+    // sans cela, il y a un espace blanc entre les deux contianer créé par la position relative décalée vers le haut.
+    // il y a donc lieu de corriger le décalage créé par le positionnement relatif
     margin-bottom: -50px;
     &__headline{
         display: flex; 

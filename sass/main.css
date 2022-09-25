@@ -146,12 +146,18 @@ button {
 .fa-heart {
   font-size: x-large;
   color: white;
+  /*La property text-stroke vise à faire apparaître un contour sur l'icone FA
+  Cela fonctionne car l'icone est en fait une police particulière*/
   -webkit-text-stroke: 2px black;
 }
 .fa-heart:hover {
+  /*la property 'transparent' est capitale, sans cela, çane fonctionne pas.
+  EN réalité la transparence laisse apparaître la background-image.
+  ici j'ai utilisé 'background en abrégé mais le gradient fait bien office d'arrière plan comme une image*/
   color: transparent;
-  background: rgb(147, 86, 220);
   background: linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 70%);
+  /*Le background-clip: text sert à détourer l'icône.
+  En effet, les icones FontAwesome sont en fait une police spéciale*/
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-stroke: 0px;
