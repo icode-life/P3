@@ -68,7 +68,6 @@ button {
 
 .restocard:hover {
   box-shadow: 0 20px 60px 0px rgba(0, 0, 0, 0.5);
-  width: 83%;
 }
 
 .restocard__picture {
@@ -144,6 +143,20 @@ button {
   justify-content: space-between;
 }
 
+.fa-heart {
+  font-size: x-large;
+  color: white;
+  -webkit-text-stroke: 2px black;
+}
+.fa-heart:hover {
+  color: transparent;
+  background: rgb(147, 86, 220);
+  background: linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 70%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-stroke: 0px;
+}
+
 @media (min-width: 992px) {
   .menu-items {
     width: 80%;
@@ -180,6 +193,10 @@ footer {
 footer h3 {
   padding-top: 30px;
   font-family: Shrikhand;
+}
+
+.footer-title {
+  margin-top: 0px;
 }
 
 .footer__menu {
@@ -232,20 +249,13 @@ a:hover :visited {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-bottom: 0px;
 }
 
 .souligné-partiel {
   -webkit-text-decoration: underline #99E2D0 4px;
           text-decoration: underline #99E2D0 4px;
   text-underline-offset: 0.6rem;
-}
-
-.fa-heart {
-  font-size: larger;
-}
-.fa-heart:hover {
-  background: rgb(224, 118, 246);
-  background: linear-gradient(175deg, rgb(224, 118, 246) 37%, rgb(211, 107, 219) 43%, rgb(147, 86, 220) 70%);
 }
 
 .menu-restaurant {
@@ -257,6 +267,7 @@ a:hover :visited {
   padding-top: 20px;
   max-width: 600px;
   margin: auto;
+  margin-bottom: -50px;
 }
 .menu-restaurant__headline {
   display: flex;

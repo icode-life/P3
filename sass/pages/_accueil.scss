@@ -109,19 +109,6 @@ i {
     padding-bottom: 35px;
 }
 
-.fas {
-    color: black;
-}
-
-.fa-heart {
-    font-size: larger;
-    color: pink;
-
-    &:hover {
-        color: purple;
-    }
-}
-
 @media (min-width: 992px) {
     h2{
         text-align: center;
