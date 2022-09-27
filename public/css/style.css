@@ -1,15 +1,22 @@
 @charset "UTF-8";
 @keyframes slide-up {
-  0% {
+  from {
     transform: translateY(50px);
     opacity: 0;
   }
-  100% {
+  to {
     transform: translateY(0);
     opacity: 1;
   }
 }
-@keyframes slide-left {}
+@keyframes check-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
 body {
   margin: 0px;
 }
@@ -137,7 +144,6 @@ button {
 
 .menu-items {
   display: flex;
-  flex-direction: column;
   align-items: stretch;
   background-color: white;
   margin: auto;
@@ -151,8 +157,43 @@ button {
   display: flex;
   justify-content: space-between;
 }
-.menu-items:hover {
-  transform: translateX(-80px);
+.menu-items .price {
+  min-width: fit-content;
+}
+.menu-items .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+.menu-items .check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  font-size: xx-large;
+  color: white;
+  background-color: #99E2D0;
+  width: 0;
+  border-radius: 0 15px 15px 0;
+  transition: width 500ms;
+  opacity: 0;
+}
+.menu-items .fa-circle-check {
+  padding: 0px;
+  transform: rotate(0deg);
+  transition: transform 300ms;
+}
+.menu-items:hover .text {
+  text-overflow: ellipsis;
+}
+.menu-items:hover .check {
+  visibility: visible;
+  width: 89px;
+  opacity: 1;
+}
+.menu-items:hover .fa-circle-check {
+  transform: rotate(360deg);
 }
 
 .fa-heart {
@@ -329,6 +370,9 @@ h4 {
   margin-top: 12px;
   font-size: large;
   font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 h6 {
@@ -336,6 +380,9 @@ h6 {
   margin-top: 10px;
   font-size: 15px;
   font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .price {

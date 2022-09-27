@@ -95,10 +95,13 @@ h3{
 }
 
 h4{
- margin-bottom: 0px;
- margin-top: 12px;
- font-size: large;
- font-weight: 500;
+    margin-bottom: 0px;
+    margin-top: 12px;
+    font-size: large;
+    font-weight: 500;
+    white-space: nowrap; // empêche le saut à la ligne et donc les gonflements de div
+    overflow: hidden; // masque les débordements de div
+    text-overflow: ellipsis; // remplace le texte en overflow par 3 petits points
 }
 
 
@@ -106,7 +109,10 @@ h6{
     margin-bottom: 0px;
     margin-top: 10px;
     font-size: 15px;
-    font-weight:300;
+    font-weight: 300;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .price{

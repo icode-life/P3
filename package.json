@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/icode-life/P3#readme",
   "dependencies": {
-    "sass": "^1.54.9"
+    "sass": "^1.54.9",
+    "prefix": "postcss ./public/css/style.css"
   }
 }
