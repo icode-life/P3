@@ -1,3 +1,43 @@
+.preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+}
+
+.preloader > .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 110px;
+    
+}
+
+.prime{
+    color: $prime;
+}
+
+.second{
+    color: $second;
+}
+
+.fa-burger{
+    color: $third;
+}
+
+.load{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .location{
     height: 60px;
     display: flex;
