@@ -35,8 +35,14 @@
     transform: rotate(180deg);
   }
 }
-@-webkit-keyframes loader {}
-@keyframes loader {}
+/*@keyframes loader{
+    from{
+        transform: ;
+    }
+    to{
+        transform: ;
+    }
+}*/
 body {
   margin: 0px;
 }
@@ -517,9 +523,10 @@ li a {
 }
 
 .preloader > .container {
+  display: flex;
+  justify-content: space-evenly;
   position: absolute;
   top: 50%;
-  left: 50%;
   width: 350px;
   height: 110px;
 }

@@ -12,12 +12,13 @@
 }
 
 .preloader > .container{
+    display: flex;
+    justify-content: space-evenly;
     position: absolute;
     top: 50%;
-    left: 50%;
     width: 350px;
     height: 110px;
-    
+
 }
 
 .prime{
