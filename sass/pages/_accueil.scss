@@ -9,9 +9,7 @@
     justify-content: center;
     align-items: center;
     background: whitesmoke;
-    display: initial;
-    opacity: 1;
-    transition: display opacity 3000ms;
+    animation: 3000ms preloader forwards;    
 }
 
 .preloader > .ohmyfood{
@@ -22,27 +20,23 @@
     left: 10%;
     width: 350px;
     height: 110px;
-
+    .prime {
+        color: $prime;
+    }
+    .second {
+        color: $second;
+    }
+    .fa-burger {
+        color: $third;
+    }
 }
 
-.prime{
-    color: $prime;
-}
-
-.second{
-    color: $second;
-}
-
-.fa-burger{
-    color: $third;
-}
 
 .load{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 
 .loading-bar {
         top: 60%;

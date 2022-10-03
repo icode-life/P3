@@ -31,14 +31,19 @@
     background: #99E2D0;
   }
 }
-/*@keyframes loader{
-    from{
-        transform: ;
-    }
-    to{
-        transform: ;
-    }
-}*/
+@keyframes preloader {
+  0% {
+    opacity: 1;
+    z-index: 10;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
 body {
   margin: 0px;
 }
@@ -93,6 +98,10 @@ button {
   justify-content: center;
   align-items: center;
   font-size: 12px;
+}
+
+a, a:visited, a:focus, a:hover {
+  text-decoration: none;
 }
 
 .restocard {
@@ -505,9 +514,7 @@ li a {
   justify-content: center;
   align-items: center;
   background: whitesmoke;
-  display: initial;
-  opacity: 1;
-  transition: display opacity 3000ms;
+  animation: 3000ms preloader forwards;
 }
 
 .preloader > .ohmyfood {
@@ -519,16 +526,13 @@ li a {
   width: 350px;
   height: 110px;
 }
-
-.prime {
+.preloader > .ohmyfood .prime {
   color: #9356DC;
 }
-
-.second {
+.preloader > .ohmyfood .second {
   color: #FF79DA;
 }
-
-.fa-burger {
+.preloader > .ohmyfood .fa-burger {
   color: #99E2D0;
 }
 
