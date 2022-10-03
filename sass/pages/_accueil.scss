@@ -1,3 +1,5 @@
+//loaders
+//general loader management
 .preloader{
     position: fixed;
     top: 0;
@@ -51,7 +53,7 @@
         transform-origin: bottom center;
         border-top-right-radius: 20px;
         border-top-left-radius: 20px;
-        animation: loader 1500ms linear infinite;
+        animation: loader 1500ms linear 2s;
     }
 
     .bar1 {
@@ -86,7 +88,7 @@
         animation-delay: 0.8s;
     }
 }
-
+// main
 .location{
     height: 60px;
     display: flex;
@@ -132,6 +134,9 @@ h1{
 
 .main-call2action{
     width: 230px;
+    &:hover{
+        box-shadow: 0 20px 60px 0px rgba(0, 0, 0, 0.5);
+    }
 }
 
 h2{
@@ -161,8 +166,7 @@ li{
     padding-bottom: 5px;
 }
 
-a{
-    text-decoration: none;
+a{  text-decoration: none;
     &:visited{
         text-decoration: none;
     }
@@ -199,6 +203,9 @@ i {
 }
 
 @media (min-width: 992px) {
+    .restocontainer{
+        max-width: none;
+    }
     h2{
         text-align: center;
     }
@@ -214,6 +221,9 @@ i {
         width: 95%;
         flex-direction: row;
         justify-content: center;
+        &:hover li p a i .fa-solid{
+            color: $prime;
+        }
     }
 
     .btn{

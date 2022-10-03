@@ -129,6 +129,9 @@ li a{
 .call2action{
     margin-top: 30px;
     width: 50%;
+    &:hover{
+        box-shadow: 0 20px 60px 0px rgba(0, 0, 0, 0.5);
+    }
 }
 
 @media (min-width: 992px) {
@@ -154,6 +157,7 @@ li a{
         flex-direction: row;
         flex-wrap: wrap;
         max-width: 1000px;
+        height: 1000px;
         margin: auto;
     }
 

@@ -23,7 +23,7 @@
 
 @keyframes loader {
     0% {
-        transform: scaleY(0.1);
+        transform: scaleY(0);
         background: #9356DC;
     }
 
@@ -33,7 +33,7 @@
     }
 
     100% {
-        transform: scaleY(0.1);
+        transform: scaleY(0);
         background: #99E2D0;
     }
 }

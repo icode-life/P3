@@ -115,16 +115,22 @@ a, a:visited, a:focus, a:hover{
     .fa-circle-check{
         padding: 0px;
         transform: rotate(0deg);
-        transition: transform 300ms;
+        transition: transform 500ms;
     }
 
     &:hover{
-        .text{
+        .text{ // capital d'appliquer ces modifs sur la div qui recule face au check qui s'élargi!
+            white-space: nowrap;
+            overflow: hidden;
             text-overflow: ellipsis;
         }
         .check{
+            display: flex;
+            flex: 2;//permet de grandir et venir repousser le flex grow 1 sur la classe text
+            width: 78px;
+            max-width: 78px;
+            min-width: 78px;
             visibility: visible;
-            width: 89px;
             opacity: 1;
             cursor: pointer; //affiche un doigt pointé plutôt qu'uen flèche
         }

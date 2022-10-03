@@ -37,7 +37,7 @@
 }
 @-webkit-keyframes loader {
   0% {
-    transform: scaleY(0.1);
+    transform: scaleY(0);
     background: #9356DC;
   }
   50% {
@@ -45,13 +45,13 @@
     background: #FF79DA;
   }
   100% {
-    transform: scaleY(0.1);
+    transform: scaleY(0);
     background: #99E2D0;
   }
 }
 @keyframes loader {
   0% {
-    transform: scaleY(0.1);
+    transform: scaleY(0);
     background: #9356DC;
   }
   50% {
@@ -59,7 +59,7 @@
     background: #FF79DA;
   }
   100% {
-    transform: scaleY(0.1);
+    transform: scaleY(0);
     background: #99E2D0;
   }
 }
@@ -262,14 +262,20 @@ a, a:visited, a:focus, a:hover {
 .menu-items .fa-circle-check {
   padding: 0px;
   transform: rotate(0deg);
-  transition: transform 300ms;
+  transition: transform 500ms;
 }
 .menu-items:hover .text {
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 .menu-items:hover .check {
+  display: flex;
+  flex: 2;
+  width: 78px;
+  max-width: 78px;
+  min-width: 78px;
   visibility: visible;
-  width: 89px;
   opacity: 1;
   cursor: pointer;
 }
@@ -488,6 +494,9 @@ li a {
   margin-top: 30px;
   width: 50%;
 }
+.call2action:hover {
+  box-shadow: 0 20px 60px 0px rgba(0, 0, 0, 0.5);
+}
 
 @media (min-width: 992px) {
   .menu-restaurant {
@@ -510,6 +519,7 @@ li a {
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 1000px;
+    height: 1000px;
     margin: auto;
   }
   .back {
@@ -612,8 +622,8 @@ li a {
   transform-origin: bottom center;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  -webkit-animation: loader 1500ms linear infinite;
-          animation: loader 1500ms linear infinite;
+  -webkit-animation: loader 1500ms linear 2s;
+          animation: loader 1500ms linear 2s;
 }
 .loading-bar .bar1 {
   -webkit-animation-delay: 0.1s;
@@ -694,6 +704,9 @@ h1 {
 .main-call2action {
   width: 230px;
 }
+.main-call2action:hover {
+  box-shadow: 0 20px 60px 0px rgba(0, 0, 0, 0.5);
+}
 
 h2 {
   text-align: left;
@@ -760,6 +773,9 @@ i {
 }
 
 @media (min-width: 992px) {
+  .restocontainer {
+    max-width: none;
+  }
   h2 {
     text-align: center;
   }
@@ -773,6 +789,9 @@ i {
     width: 95%;
     flex-direction: row;
     justify-content: center;
+  }
+  .btn__menu:hover li p a i .fa-solid {
+    color: #9356DC;
   }
   .btn {
     width: 30%;
