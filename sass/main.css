@@ -35,6 +35,34 @@
     transform: rotate(180deg);
   }
 }
+@-webkit-keyframes loader {
+  0% {
+    transform: scaleY(0.1);
+    background: #9356DC;
+  }
+  50% {
+    transform: scaleY(1);
+    background: #FF79DA;
+  }
+  100% {
+    transform: scaleY(0.1);
+    background: #99E2D0;
+  }
+}
+@keyframes loader {
+  0% {
+    transform: scaleY(0.1);
+    background: #9356DC;
+  }
+  50% {
+    transform: scaleY(1);
+    background: #FF79DA;
+  }
+  100% {
+    transform: scaleY(0.1);
+    background: #99E2D0;
+  }
+}
 /*@keyframes loader{
     from{
         transform: ;
@@ -204,10 +232,10 @@ button {
   font-size: xx-large;
   color: white;
   background-color: #99E2D0;
-  width: 0;
   border-radius: 0 15px 15px 0;
-  transition: width 500ms;
   opacity: 0;
+  width: 0;
+  transition: width 500ms;
 }
 .menu-items .fa-circle-check {
   padding: 0px;
@@ -520,13 +548,17 @@ li a {
   justify-content: center;
   align-items: center;
   background: whitesmoke;
+  display: initial;
+  opacity: 1;
+  transition: display opacity 3000ms;
 }
 
-.preloader > .container {
+.preloader > .ohmyfood {
   display: flex;
   justify-content: space-evenly;
   position: absolute;
-  top: 50%;
+  top: 35%;
+  left: 10%;
   width: 350px;
   height: 110px;
 }
@@ -547,6 +579,55 @@ li a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.loading-bar {
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.loading-bar .bar {
+  width: 17px;
+  height: 100px;
+  display: inline-block;
+  transform-origin: bottom center;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  -webkit-animation: loader 1500ms linear infinite;
+          animation: loader 1500ms linear infinite;
+}
+.loading-bar .bar1 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+.loading-bar .bar2 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.loading-bar .bar3 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.loading-bar .bar4 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.loading-bar .bar5 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.loading-bar .bar6 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.loading-bar .bar7 {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+.loading-bar .bar8 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
 
 .location {

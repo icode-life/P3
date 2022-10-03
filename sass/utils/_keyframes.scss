@@ -21,6 +21,23 @@
     }
 }
 
+@keyframes loader {
+    0% {
+        transform: scaleY(0.1);
+        background: #9356DC;
+    }
+
+    50% {
+        transform: scaleY(1);
+        background: #FF79DA;
+    }
+
+    100% {
+        transform: scaleY(0.1);
+        background: #99E2D0;
+    }
+}
+
 /*@keyframes loader{
     from{
         transform: ;
