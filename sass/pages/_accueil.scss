@@ -11,7 +11,7 @@
     justify-content: center;
     align-items: center;
     background: whitesmoke;
-    animation: 3000ms preloader forwards;    
+    animation: 3500ms preloader forwards;    
 }
 
 .preloader > .ohmyfood{
@@ -53,7 +53,7 @@
         transform-origin: bottom center;
         border-top-right-radius: 20px;
         border-top-left-radius: 20px;
-        animation: loader 1500ms linear 2s;
+        animation: 3000ms loader linear;
     }
 
     .bar1 {

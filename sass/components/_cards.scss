@@ -102,20 +102,24 @@ a, a:visited, a:focus, a:hover{
         display: flex;
         align-items: center;
         justify-content: center;
-        visibility: hidden;
+        z-index: 2;
         font-size: xx-large;
         color: white;
         background-color: $third;
         border-radius: 0 15px 15px 0;
         opacity: 0;
         width: 0;
-        transition: width 500ms;
+        /*transition:  width 300ms ease-in-out, opacity 300ms;
+        -webkit-transition:  width 0.3s ease-in-out, opacity 300ms;
+        -moz-transition:  width 0.3s ease-in-out, opacity 300ms;
+        -o-transition:  width 0.3s ease-in-out, opacity 300ms;*/
+        transition: all 500ms;
     }
 
     .fa-circle-check{
         padding: 0px;
         transform: rotate(0deg);
-        transition: transform 500ms;
+        transition: transform 500ms ease-in-out 100ms;
     }
 
     &:hover{
@@ -126,13 +130,14 @@ a, a:visited, a:focus, a:hover{
         }
         .check{
             display: flex;
-            flex: 2;//permet de grandir et venir repousser le flex grow 1 sur la classe text
-            width: 78px;
-            max-width: 78px;
-            min-width: 78px;
             visibility: visible;
-            opacity: 1;
             cursor: pointer; //affiche un doigt pointé plutôt qu'uen flèche
+            /*-webkit-transition:  width 300ms ease-in-out, opacity 300ms;
+            -moz-transition:  width 300ms ease-in-out, opacity 300ms;
+            -o-transition:  width 300ms ease-in-out, opacity 300ms;
+            transition:  width 300ms ease-in-out, opacity 300ms;*/
+            width: 78px;
+            opacity: 1;
         }
         .fa-circle-check{
             transform: rotate(360deg);
@@ -155,8 +160,9 @@ a, a:visited, a:focus, a:hover{
         /*Le background-clip: text sert à détourer l'icône.
         En effet, les icones FontAwesome sont en fait une police spéciale*/
         background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
         -webkit-text-stroke: 0px; //pour faire disparaître le contour
-
     }
 }
 

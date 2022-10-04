@@ -33,6 +33,7 @@
 }
 @keyframes preloader {
   0% {
+    visibility: visible;
     opacity: 1;
     z-index: 10;
   }
@@ -40,6 +41,7 @@
     opacity: 1;
   }
   100% {
+    visibility: hidden;
     opacity: 0;
     z-index: -1;
   }
@@ -201,19 +203,23 @@ a, a:visited, a:focus, a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  visibility: hidden;
+  z-index: 2;
   font-size: xx-large;
   color: white;
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
   opacity: 0;
   width: 0;
-  transition: width 500ms;
+  /*transition:  width 300ms ease-in-out, opacity 300ms;
+  -webkit-transition:  width 0.3s ease-in-out, opacity 300ms;
+  -moz-transition:  width 0.3s ease-in-out, opacity 300ms;
+  -o-transition:  width 0.3s ease-in-out, opacity 300ms;*/
+  transition: all 500ms;
 }
 .menu-items .fa-circle-check {
   padding: 0px;
   transform: rotate(0deg);
-  transition: transform 500ms;
+  transition: transform 500ms ease-in-out 100ms;
 }
 .menu-items:hover .text {
   white-space: nowrap;
@@ -222,13 +228,14 @@ a, a:visited, a:focus, a:hover {
 }
 .menu-items:hover .check {
   display: flex;
-  flex: 2;
-  width: 78px;
-  max-width: 78px;
-  min-width: 78px;
   visibility: visible;
-  opacity: 1;
   cursor: pointer;
+  /*-webkit-transition:  width 300ms ease-in-out, opacity 300ms;
+  -moz-transition:  width 300ms ease-in-out, opacity 300ms;
+  -o-transition:  width 300ms ease-in-out, opacity 300ms;
+  transition:  width 300ms ease-in-out, opacity 300ms;*/
+  width: 78px;
+  opacity: 1;
 }
 .menu-items:hover .fa-circle-check {
   transform: rotate(360deg);
@@ -250,6 +257,8 @@ a, a:visited, a:focus, a:hover {
   /*Le background-clip: text sert à détourer l'icône.
   En effet, les icones FontAwesome sont en fait une police spéciale*/
   background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
   -webkit-text-stroke: 0px;
 }
 
@@ -289,6 +298,10 @@ footer {
 footer h3 {
   padding-top: 30px;
   font-family: Shrikhand;
+  padding-left: 0px;
+}
+footer .footer-menu-commit, footer .misc {
+  margin-left: 0px;
 }
 
 .footer-title {
@@ -502,6 +515,7 @@ li a {
 @media screen and (min-width: 600px) and (max-width: 991px) {
   .menu-restaurant {
     position: static;
+    height: 1250px;
   }
   .logo {
     padding-top: 6px;
@@ -524,7 +538,7 @@ li a {
   justify-content: center;
   align-items: center;
   background: whitesmoke;
-  animation: 3000ms preloader forwards;
+  animation: 3500ms preloader forwards;
 }
 
 .preloader > .ohmyfood {
@@ -565,7 +579,7 @@ li a {
   transform-origin: bottom center;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  animation: loader 1500ms linear 2s;
+  animation: 3000ms loader linear;
 }
 .loading-bar .bar1 {
   animation-delay: 0.1s;
