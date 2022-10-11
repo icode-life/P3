@@ -34,16 +34,9 @@
 @keyframes preloader {
   0% {
     visibility: visible;
-    opacity: 1;
-    z-index: 10;
-  }
-  99% {
-    opacity: 1;
   }
   100% {
     visibility: hidden;
-    opacity: 0;
-    z-index: -1;
   }
 }
 body {
@@ -741,6 +734,10 @@ i {
   padding-bottom: 35px;
 }
 
+.btn:hover i {
+  color: #9356DC;
+}
+
 @media (min-width: 992px) {
   .restocontainer {
     max-width: none;
@@ -764,10 +761,6 @@ i {
   }
   .btn {
     width: 30%;
-  }
-  .btn:hover .btn :nth-child(2) i {
-    color: #9356DC;
-    background-color: #9356DC;
   }
   .restocontainer {
     flex-direction: row;

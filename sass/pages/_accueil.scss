@@ -207,6 +207,14 @@ i {
     padding-bottom: 35px;
 }
 
+.btn {
+    &:hover {
+        i {
+            color: $prime;
+        }
+    }
+}
+
 @media (min-width: 992px) {
     .restocontainer{
         max-width: none;
@@ -235,12 +243,6 @@ i {
         width: 30%;
     }
 
-    .btn:hover{
-        .btn :nth-child(2) i {
-            color: $prime;
-            background-color: $prime;
-        }
-    }
     
     .restocontainer{
         flex-direction: row;
