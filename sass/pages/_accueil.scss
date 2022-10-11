@@ -89,8 +89,12 @@
     }
 }
 // main
+
+.logo{
+    width: 38%;
+}
 .location{
-    height: 60px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -141,7 +145,7 @@ h1{
 
 h2{
     text-align: left;
-    padding-left: 30px;
+    padding-left: 26px;
 }
 
 nav{
@@ -229,6 +233,13 @@ i {
 
     .btn{
         width: 30%;
+    }
+
+    .btn:hover{
+        .btn :nth-child(2) i {
+            color: $prime;
+            background-color: $prime;
+        }
     }
     
     .restocontainer{

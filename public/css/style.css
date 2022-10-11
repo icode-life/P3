@@ -318,6 +318,10 @@ footer #footer-logo {
 
 .footer-title {
   margin-top: 0px;
+  color: white;
+}
+.footer-title:visited {
+  color: white;
 }
 
 .footer__menu {
@@ -618,8 +622,12 @@ li a {
   animation-delay: 0.8s;
 }
 
+.logo {
+  width: 38%;
+}
+
 .location {
-  height: 60px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -670,7 +678,7 @@ h1 {
 
 h2 {
   text-align: left;
-  padding-left: 30px;
+  padding-left: 26px;
 }
 
 nav {
@@ -756,6 +764,10 @@ i {
   }
   .btn {
     width: 30%;
+  }
+  .btn:hover .btn :nth-child(2) i {
+    color: #9356DC;
+    background-color: #9356DC;
   }
   .restocontainer {
     flex-direction: row;

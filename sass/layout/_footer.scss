@@ -21,6 +21,10 @@ footer{
 
 .footer-title{
     margin-top: 0px;
+    color: white;
+    &:visited{
+        color: white;
+    }
 }
 .footer__menu{
     display: flex;
