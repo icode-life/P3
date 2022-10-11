@@ -285,6 +285,15 @@ header img {
   width: 50%;
 }
 
+nav {
+  padding-bottom: 60px;
+}
+
+@media (min-width: 992px) {
+  nav {
+    padding-bottom: 35px;
+  }
+}
 h3 a {
   text-decoration: none;
   color: #F6F6F6;
@@ -302,6 +311,9 @@ footer h3 {
 }
 footer .footer-menu-commit, footer .misc {
   margin-left: 0px;
+}
+footer #footer-logo {
+  color: white;
 }
 
 .footer-title {
@@ -688,6 +700,7 @@ a {
 }
 a:visited {
   text-decoration: none;
+  color: black;
 }
 
 i {
