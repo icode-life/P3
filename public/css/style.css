@@ -95,8 +95,8 @@ button {
   font-size: 12px;
 }
 
-a, a:visited, a:focus, a:hover {
-  text-decoration: none;
+a h3, a p, a:visited h3, a:visited p, a:focus h3, a:focus p, a:hover h3, a:hover p {
+  color: black;
 }
 
 .restocard {
