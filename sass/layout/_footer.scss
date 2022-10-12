@@ -44,4 +44,18 @@ footer{
     }
 }
 
+.footlink{
+    color: white;
+}
+
+a:visited{
+    .footlink{
+        color: white;
+    }
+}
+
+.fa-solid, .fa-solid:visited{
+    color: white;
+}
+
 

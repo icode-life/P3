@@ -334,6 +334,18 @@ footer #footer-logo {
   color: #F6F6F6;
 }
 
+.footlink {
+  color: white;
+}
+
+a:visited .footlink {
+  color: white;
+}
+
+.fa-solid, .fa-solid:visited {
+  color: white;
+}
+
 a:hover :visited {
   text-decoration: none;
 }
@@ -706,6 +718,9 @@ li {
 
 a {
   text-decoration: none;
+}
+a .main-call2action {
+  color: black;
 }
 a:visited {
   text-decoration: none;
