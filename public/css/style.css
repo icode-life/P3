@@ -342,7 +342,10 @@ a:visited .footlink {
   color: white;
 }
 
-.fa-solid, .fa-solid:visited {
+.fa-utensils, .fa-handshake-angle {
+  color: white;
+}
+.fa-utensils:visited, .fa-handshake-angle:visited {
   color: white;
 }
 

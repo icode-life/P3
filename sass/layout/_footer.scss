@@ -54,8 +54,10 @@ a:visited{
     }
 }
 
-.fa-solid, .fa-solid:visited{
+.fa-utensils, .fa-handshake-angle{
     color: white;
+    &:visited{
+        color: white;
+    }
 }
-
 
