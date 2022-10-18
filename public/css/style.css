@@ -358,7 +358,7 @@ a:hover :visited {
   top: 20px;
   left: 20px;
   font-size: 20px;
-  color: inherit;
+  color: black;
   text-decoration: none;
 }
 
@@ -686,11 +686,25 @@ h1 {
 }
 
 .main-call2action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(175deg, rgb(224, 118, 246) 37%, rgb(211, 107, 219) 43%, rgb(147, 86, 220) 70%);
+  color: #F6F6F6;
+  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.3);
   color: white;
   width: 230px;
 }
 .main-call2action:hover {
   box-shadow: 0 20px 60px 0px rgba(0, 0, 0, 0.5);
+}
+.main-call2action:visited {
+  color: white;
 }
 
 h2 {
