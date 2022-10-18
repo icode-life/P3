@@ -137,6 +137,7 @@ h1{
 }
 
 .main-call2action{
+    color: white;
     width: 230px;
     &:hover{
         box-shadow: 0 20px 60px 0px rgba(0, 0, 0, 0.5);
@@ -173,11 +174,14 @@ li{
 a{  
     text-decoration: none;
     .main-call2action{
-        color: black;
+        color: white;
     }
     &:visited{
         text-decoration: none;
         color: black;
+        .main-call2action{
+            color: white;
+        }
     }
 }
 

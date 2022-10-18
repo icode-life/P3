@@ -686,6 +686,7 @@ h1 {
 }
 
 .main-call2action {
+  color: white;
   width: 230px;
 }
 .main-call2action:hover {
@@ -723,11 +724,14 @@ a {
   text-decoration: none;
 }
 a .main-call2action {
-  color: black;
+  color: white;
 }
 a:visited {
   text-decoration: none;
   color: black;
+}
+a:visited .main-call2action {
+  color: white;
 }
 
 i {
